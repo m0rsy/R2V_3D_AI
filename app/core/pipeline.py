@@ -419,7 +419,7 @@ class GenerationOrchestrator:
     def _normalize_options(options: PipelineOptions) -> PipelineOptions:
         quality = (options.quality_mode or DEFAULT_QUALITY_MODE).strip().lower()
         if quality not in {"fast", "balanced", "quality"}:
-            quality = "balanced"
+            quality = "quality"
         return PipelineOptions(
             model_tier=_normalize_model_tier(options.model_tier),
             textured=bool(options.textured),

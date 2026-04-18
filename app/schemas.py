@@ -53,7 +53,7 @@ class Generate3DRequest(BaseModel):
         value = (v or DEFAULT_QUALITY_MODE).strip().lower()
         if value in {"fast", "balanced", "quality"}:
             return value
-        return "balanced"
+        return "quality"
 
 
 class JobStartResponse(BaseModel):

@@ -21,9 +21,9 @@ if DEFAULT_MODEL_TIER not in AVAILABLE_MODEL_TIERS:
 
 DEFAULT_TEXTURED = os.getenv("DEFAULT_TEXTURED", "false").lower() == "true"
 DEFAULT_MULTI_VIEW = os.getenv("DEFAULT_MULTI_VIEW", "false").lower() == "true"
-DEFAULT_QUALITY_MODE = os.getenv("DEFAULT_QUALITY_MODE", "balanced").strip().lower()
+DEFAULT_QUALITY_MODE = os.getenv("DEFAULT_QUALITY_MODE", "quality").strip().lower()
 if DEFAULT_QUALITY_MODE not in {"fast", "balanced", "quality"}:
-    DEFAULT_QUALITY_MODE = "balanced"
+    DEFAULT_QUALITY_MODE = "quality"
 
 # -------------------------------
 # MODELS (LOCAL PATHS / HF IDs)
