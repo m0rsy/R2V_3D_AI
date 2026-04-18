@@ -1,0 +1,36 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+myenv/
+.venv/
+venv/
+env/
+
+# Local environment / secrets
+.env
+.env.*
+
+# Build/test/tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Runtime artifacts
+outputs/
+logs/
+*.log
+
+# Local generated assets
+model.glb
+*.tmp
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

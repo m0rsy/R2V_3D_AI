@@ -1,0 +1,48 @@
+# -------------------------
+# Backend
+# -------------------------
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+
+# -------------------------
+# Core ML / Torch
+# -------------------------
+torch
+torchvision
+torchaudio
+diffusers
+transformers
+accelerate
+
+# -------------------------
+# Image / Vision
+# -------------------------
+pillow
+opencv-python
+numpy
+
+# -------------------------
+# Background Removal (CRITICAL)
+# -------------------------
+rembg
+onnxruntime        # ✅ Local CPU (stable, fast enough)
+
+# If you want GPU bg-removal on Modal later, replace onnxruntime with:
+# onnxruntime-gpu
+
+# -------------------------
+# Whisper (voice)
+# -------------------------
+faster-whisper
+
+# -------------------------
+# Hunyuan3D-2
+# -------------------------
+git+https://github.com/Tencent-Hunyuan/Hunyuan3D-2.git
+
+# -------------------------
+# Optional: mo3d-pro Gemini image backend
+# -------------------------
+# google-genai
